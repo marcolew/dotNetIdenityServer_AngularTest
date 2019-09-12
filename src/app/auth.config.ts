@@ -8,7 +8,7 @@ export const authConfig: AuthConfig = {
 
   dummyClientSecret: "secret",
 
-  responseType: "code id_token",
+  responseType: "code id_token token",
 
   // URL of the SPA to redirect the user to after login
   redirectUri: window.location.origin + "/index.html",

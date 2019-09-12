@@ -32,6 +32,7 @@ export class HeaderComponent {
       text: "Login",
       icon: "user",
       onClick: () => {
+        console.log(this.oauthService.authorizationHeader());
         this.oauthService.initImplicitFlow();
       }
     },
@@ -39,6 +40,9 @@ export class HeaderComponent {
       text: "Logout",
       icon: "runner",
       onClick: () => {
+        console.log(this.oauthService.authorizationHeader());
+        console.log(this.oauthService.getAccessToken());
+        console.log(this.oauthService.getIdToken());
         this.oauthService.logOut();
       }
     }

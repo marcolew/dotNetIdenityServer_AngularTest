@@ -7,6 +7,7 @@ export class AuthGuardService implements CanActivate {
   constructor(private router: Router, private oauthService: OAuthService) {}
 
   canActivate(route: ActivatedRouteSnapshot): boolean {
+    console.log(this.oauthService);
     return true;
   }
 
